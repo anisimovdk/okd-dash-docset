@@ -1,8 +1,11 @@
 <entry>
-  <version>4.11</version>
+  <version>4.12</version>
   <ios_version>1</ios_version>
   <url>https://raw.githubusercontent.com/anisimovdk/okd-dash-docset/master/release/okd.tgz</url>
   <other-versions>
+    <version>
+      <name>4.11</name>
+    </version>
     <version>
       <name>4.10</name>
     </version>
