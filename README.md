@@ -24,13 +24,13 @@ mkdir -p release
 docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder
 
 # build specified version
-docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder 4.11
+docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder 4.13
 
 # build specified version and tag it latest
-docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder 4.11 latest
+docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder 4.13 latest
 
 # build multiple versions at once
-for version in 4.4 4.5 4.6 4.7 4.8 4.9 4.10 4.11; do docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder $version&; done
+for version in 4.4 4.5 4.6 4.7 4.8 4.9 4.10 4.11 4.12 4.13; do docker run --rm -v $PWD/release:/app/release okd-dash-docset-builder $version&; done
 ```
 
 ## Build on OSX
@@ -49,10 +49,10 @@ brew install asciidoctor
 ./build.sh
 
 # build specified version
-./build.sh 4.11
+./build.sh 4.13
 
 # build specified version and tag it latest
-./build.sh 4.11 latest
+./build.sh 4.13 latest
 ```
 
 ## Currently supported/tested doc versions
@@ -65,3 +65,5 @@ brew install asciidoctor
 * 4.9
 * 4.10
 * 4.11
+* 4.12
+* 4.13
